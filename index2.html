@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cadastro de pessoas</h1>
+    <!-- DOM (Document Object Model)-->
+     <h2>alterar um conteudo de um elemento</h2>
+     <p id="menssagem" >Texto original</p>
+     <button onclick="alterarTexto()">Alterar texto</button>
+
+     <h2> Coletar dados de um impput </h2> 
+     <input type=" text" id="item" placeholder="novo item">
+     <button onclick="adicionarItem()">Adicionar</button>
+
+
+
+    <script>
+        let pessoas = []
+        function alterarTexto(){
+            document.getElementById("menssagem").textContent = "texto alterado com sucesso"
+
+           
+
+        }
+        function adicionarItem(){
+            const texto = document.getElementById("item").value;
+            document.getElementById("lista").textContent = `itemk: ${texto}`
+        }
+    </script>
+    
+</body>
+</html>
